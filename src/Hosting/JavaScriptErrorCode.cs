@@ -1,4 +1,4 @@
-﻿namespace SoundByte.Engine.Hosting
+﻿namespace ChakraUWP.Hosting
 {
     /// <summary>
     ///     An error code returned from a Chakra hosting API.

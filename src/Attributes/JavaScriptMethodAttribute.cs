@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SoundByte.Engine.Attributes
+namespace ChakraUWP.Attributes
 {
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
     public class JavaScriptMethodAttribute : Attribute

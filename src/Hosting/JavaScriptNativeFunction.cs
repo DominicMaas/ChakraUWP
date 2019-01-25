@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SoundByte.Engine.Hosting
+namespace ChakraUWP.Hosting
 {
     using System.Runtime.InteropServices;
 

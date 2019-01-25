@@ -1,4 +1,4 @@
-﻿namespace SoundByte.Engine.Hosting
+﻿namespace ChakraUWP.Hosting
 {
     using System;
 

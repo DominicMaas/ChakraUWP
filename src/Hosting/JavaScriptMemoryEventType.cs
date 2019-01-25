@@ -1,4 +1,4 @@
-﻿namespace SoundByte.Engine.Hosting
+﻿namespace ChakraUWP.Hosting
 {
     /// <summary>
     ///     Allocation callback event type.

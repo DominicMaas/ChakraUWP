@@ -1,16 +1,15 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using SoundByte.Engine.Attributes;
-using SoundByte.Engine.Hosting;
+using ChakraUWP.Attributes;
+using ChakraUWP.Hosting;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace SoundByte.Engine
+namespace ChakraUWP
 {
     /// <summary>
     ///     Create a new JavaScript engine for the application

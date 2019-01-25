@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SoundByte.Engine.Attributes;
+using ChakraUWP.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace SoundByte.Engine.Tests
+namespace ChakraUWP.Tests
 {
     [TestClass]
     public class EngineTests
