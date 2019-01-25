@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28516.95
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChakraUWP", "src\ChakraUWP.csproj", "{2794CAE8-7585-477A-96D2-3E1E1A340210}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChakraUWP.Tests", "tests\ChakraUWP.Tests.csproj", "{C9BEA684-00B1-4814-8153-9434896C50A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2794CAE8-7585-477A-96D2-3E1E1A340210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2794CAE8-7585-477A-96D2-3E1E1A340210}.Debug|Any CPU.Build.0 = Debug|Any CPU	
+		{2794CAE8-7585-477A-96D2-3E1E1A340210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2794CAE8-7585-477A-96D2-3E1E1A340210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BEA684-00B1-4814-8153-9434896C50A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BEA684-00B1-4814-8153-9434896C50A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BEA684-00B1-4814-8153-9434896C50A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BEA684-00B1-4814-8153-9434896C50A5}.Release|Any CPU.Build.0 = Release|Any CPU
+
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E20F076-0F95-4898-980E-0845BAAFE6C1}
+	EndGlobalSection
+EndGlobal
