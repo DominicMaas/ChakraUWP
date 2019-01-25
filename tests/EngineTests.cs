@@ -284,6 +284,15 @@ namespace ChakraUWP.Tests
             engine.AddObject("advancedClass2", new AdvancedClass());
             engine.Execute("advancedClass2.FuncTest(function (i) {\nreturn i + 1;\n});");
         }
+
+        [TestMethod]
+        public void JsTestSetAndGet()
+        {
+            engine.Execute("var k = 4;");
+            var result = engine.Evaluate<int>("k");
+
+            Assert.AreEqual(4, result);
+        }
     }
 
     public enum TestEnum

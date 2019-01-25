@@ -30,6 +30,8 @@ namespace ChakraUWP
 
         public EngineOptions Options { get; }
 
+        #region Constructors
+
         public Engine() : this(null)
         { }
 
@@ -67,6 +69,8 @@ namespace ChakraUWP
             if (Native.JsStartDebugging() != JavaScriptErrorCode.NoError)
                 throw new Exception("Failed to start debugging.");
         }
+
+        #endregion Constructors
 
         #region Add Object
 
@@ -133,6 +137,12 @@ namespace ChakraUWP
 
         #endregion Add Type
 
+        /// <summary>
+        ///     Execute and get the result.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="script"></param>
+        /// <returns></returns>
         public T Evaluate<T>(string script)
         {
             var result = Execute(script);
@@ -384,38 +394,7 @@ namespace ChakraUWP
 
                 case JavaScriptValueType.Function:
 
-                    //    Delegate.CreateDelegate(type, MethodInfo.)
-
-                    //      var func = Expression.Lambda(Expression.Constant(5) Expression.).Compile();
-
-                    ////
-                    //     return Activator.CreateInstance(type, func);
-
-                    return new Func<int, int>((t) => { return t + 1; });
-
-                    var method = type.GetMethod("Invoke");
-
-                    return Delegate.CreateDelegate(type, "Hellow", method);
-
-                    // we are passed in a JS function function(x) { return x; }
-                    // we don't know the param count, type or the return type, need to
-                    // match this to a c# func and return it.
-
-                    var paramTypes = method.GetParameters().Select(param => param.ParameterType).ToArray();
-
-                    if (method.ReturnType == typeof(void))
-                    {
-                    }
-                    else
-                    {
-                    }
-
-                    Func<dynamic, dynamic> test = new Func<dynamic, dynamic>((i) =>
-                    {
-                        var funcResult = value.CallFunction();
-                        var funcResultU = FromJavaScriptValue(funcResult, typeof(int)); // <--- OUTPUT TYPE
-                        return funcResultU;
-                    });
+                    // Somehow create a func to return back to c# that calls JS??
 
                     return null;
 
